@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="Spotify_clone.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <!-- <div class="container">
+        qwre
+    </div> -->
+    <Section id="content">
+        <div id="icon">
+            <img src="data:image/png;base64,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" alt="Spotify">
+            <h1>Spotify</h1>
+        </div>
+
+        <div id="search">
+            <p class="ms-5 text-light"><i class="fa-light fa-house"></i> Home</p>
+            <p class="ms-5 text-light"><i class="fa-solid fa-magnifying-glass"></i> Search</p>
+            <p class="ms-5 text-light"><i class="fa-light fa-bookmark"></i> Your Library</p>
+        </div>
+        
+    </Section>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
